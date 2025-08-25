@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="lesson-5-challenge.css">
+  <title>Calculator</title>
+</head>
+<body>
+<div>
+  <p>
+    <span style="
+      display: inline-block;
+      margin-bottom: 20px;
+      width: 100%;
+      border-bottom: 1px rgba(201,227,246,0.9) inset;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;">
+      Calculator</span>
+    <br>
+    <button onclick="
+      calculation += '1';
+      console.log(calculation);
+    ">1
+    </button>
+    
+    <button onclick="
+      calculation += '2';
+      console.log(calculation);
+    ">2
+    </button>
+    
+    <button onclick="
+      calculation += '3';
+      console.log(calculation);
+    ">3
+    </button>
+    
+    <button onclick="
+      calculation += ' + ';
+      console.log(calculation);
+    ">+
+    </button>
+    
+    <button onclick="
+      calculation = eval(calculation);
+      console.log(calculation);
+    ">=
+    </button>
+  </p>
+  <p>
+    <button onclick="
+      calculation += '4';
+      console.log(calculation);
+    ">4
+    </button>
+    
+    <button onclick="
+      calculation += '5';
+      console.log(calculation);
+    ">5
+    </button>
+    
+    <button onclick="
+      calculation += '6';
+      console.log(calculation);
+    ">6
+    </button>
+  </p>
+  
+  <p>
+    <button onclick="
+      calculation += '7';
+      console.log(calculation);
+    ">7
+    </button>
+    
+    <button onclick="
+      calculation += '8';
+      console.log(calculation);
+    ">8
+    </button>
+    
+    <button onclick="
+      calculation += '9';
+      console.log(calculation);
+    ">9
+    </button>
+  </p>
+</div>
+
+<script>
+  let calculation = '';
+</script>
+</body>
+</html>
